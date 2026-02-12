@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2c3e4e;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, .playfair {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.02em;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.4) ;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: #1e2f3b ;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+.navbar .nav-link:hover {
+    color: #bfd8d2 ;
+    background: rgba(191, 216, 210, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar .nav-link.active {
+    color: #bfd8d2 ;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+    color: #1e2f3b ;
+}
+
+/* ----- HERO ----- */
+.hero-section {
+    background: #ffffff;
+    height: 100vh;
+    min-height: 700px;
+    padding-top: 80px;
+    color: #1e2f3b;
+}
+
+.hero-section h1 {
+    color: #1e2f3b;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.3);
+    line-height: 1.2;
+}
+.hero-section span{
+    color: #ffbda8;
+}
+
+.btn-custom-primary {
+    background-color: #ffffffd9;
+    border: none;
+    color: #1e2f3b;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    transition: all 0.25s;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn-custom-primary:hover {
+    background-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 22px rgba(191,216,210,0.3);
+}
+
+.btn-custom-secondary {
+    background-color: #2c3e4e;
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-custom-secondary:hover {
+    background-color: #1f2e3a;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 22px rgba(254,220,210,0.3);
+}
+
+.btn-outline-custom {
+    border: 1.5px solid #bfd8d2;
+    background: transparent;
+    color: #2c3e4e;
+    font-weight: 500;
+}
+
+.btn-outline-custom:hover {
+    background: #bfd8d2;
+    border-color: #bfd8d2;
+    color: #1e2f3b;
+}
+
+.card-expertise {
+    background: white;
+    border: none;
+    transition: 0.2s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.01);
+    border: 1px solid #f0f5f4;
+}
+
+.card-expertise:hover {
+    transform: scale(0.98);
+    background-color: #fafafa;
+    border-color: #bfd8d2;
+}
+
+/* ----- BACKGROUND pastek ----- */
+.bg-soft-sage {
+    background-color: #bfd8d2 ;
+    color: #1e2f3b;
+}
+
+.bg-soft-peach {
+    background-color: #fedcd2 ;
+    color: #4a4040;
+}
+
+.bg-light-pastel {
+    background-color: #faf9f7;
+}
+
+.badge {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #bfd8d2, #fedcd2);
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.timeline-item {
+    background-color: white;
+    border-left: 6px solid #bfd8d2;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.02);
+}
+
+/* ----- FOOTER ----- */
+.social-icon {
+    font-size: 1.5rem;
+    color: #4e5c66;
+    transition: 0.2s;
+}
+
+.social-icon:hover {
+    color: #bfd8d2;
+}
+
+/* ----- FORM focus style ----- */
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(191,216,210,0.3);
+    border-color: #bfd8d2;
+}
+
+/* ----- RESPONSIVE (mobile) ----- */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    .btn-custom-primary, .btn-custom-secondary {
+        padding-left: 1.8rem ;
+        padding-right: 1.8rem ;
+    }
+}
+
+/* achievement card */
+    .achievement-card{
+      background:#fcfaf8;
+      border-left:5px solid #e5c7c0;
+      padding:1.5rem 1.8rem;
+      border-radius:0 20px 20px 0;
+      transition:0.1s;
+    }
+    .achievement-card:hover{
+      background:#fff9f7;
+    }
+
+/* ----- SMOOTH SCROLLING (CSS murni) ----- */
+html {
+    scroll-behavior: smooth;
+}
